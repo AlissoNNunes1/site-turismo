@@ -7,7 +7,7 @@ body, h1, h2, p {
 /* Estilização do cabeçalho */
 header {
     background-color: #bc0404;
-    color: #fff;
+    color: white;
     text-align: center;
     display: flex; /* Usando flexbox para alinhar itens horizontalmente */
     align-items: center; /* Centralizar verticalmente os itens do cabeçalho */
@@ -28,12 +28,15 @@ nav ul {
 
     list-style: none;
     padding-bottom: 15px;
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
 nav img {
     
+}
+.nav{
+
 }
 
 nav li {
@@ -56,8 +59,32 @@ main {
 
 /* Estilização do rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
+    display: ;
+    background-color: #bc0404;
+    color: white;
     text-align: center;
     padding: 10px 0;
+}
+.rodape{
+    text-align:justify ;
+    align-items:
+    
+}
+
+.image-rodape{
+    max-width: 10%;
+    max-height: 10%;
+}
+
+footer ul {
+    list-style: none;
+}
+footer li{
+    display: inline;
+    margin: 0 40px;
+}
+
+footer li img {
+    height: 29.34px;
+    width: 19.25px;
 }
