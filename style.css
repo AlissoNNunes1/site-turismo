@@ -1,0 +1,63 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #bc0404;
+    color: #fff;
+    text-align: center;
+    display: flex; /* Usando flexbox para alinhar itens horizontalmente */
+    align-items: center; /* Centralizar verticalmente os itens do cabeçalho */
+}
+
+header img {
+    max-width: 97px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin-top: 10px;
+}
+
+/* Estilização da navegação */
+nav ul {
+
+    list-style: none;
+    padding-bottom: 15px;
+    text-align: left;
+    color: white;
+}
+
+nav img {
+    
+}
+
+nav li {
+    display: inline;
+    margin: 0 40px;
+    
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* Estilização do conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
