@@ -1,98 +1,63 @@
-/* Reset de estilos para remover margens e preenchimentos padrão */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    letter-spacing: 1px;
-}
 
 /* Estilização do cabeçalho */
-header {
-    background-color: #bc0404;
-    color: white;
-    text-align: center;
-    display: flex; /* Usando flexbox para alinhar itens horizontalmente */
-    align-items: center; /* Centralizar verticalmente os itens do cabeçalho */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+ div{
+    display: block;
+ }
+.navbar{ /* Personalização da navbar */
+    background-color: #c00404;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    padding-left: 40px ;
+    box-shadow: 0px 0px 25px black;
 }
 
-header img {
-    max-width: 97px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
-    margin-right: 10px;
+.logo{ /*Logo do header*/
+    width: 55px;    
 }
 
-header h1 {
-    margin-top: 10px;
-}
-
-/* Estilização da navegação */
-nav ul {
-
+.navbar-left{ /*Links do header*/
     list-style: none;
-    padding-bottom: 15px;
+    display: flex;
+}
+
+li{ /*Alinhamento dos links do header*/
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: white;
 }
 
-nav img {
-    
-}
-.nav{
-
-}
-
-nav li {
-    display: inline;
-    margin: 0 40px;
-    
-    color: white;
-}
-
-nav a {
+a{ /*Personalização dos links do header*/
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 15px;
     color: white;
-    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+a:hover{ /*Interação ao passar mouse nos links do header*/
+    background-color: rgba(0, 0, 0, 0.514);
+    
 }
 
 /* Estilização do conteúdo principal */
 main {
     padding: 20px;
-}
-
-/* Estilização do rodapé */
-footer {
-    display: ;
-    background-color: #bc0404;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-.rodape{
-    text-align:justify ;
-    align-items:
+    background-image: url('https://web-front-end-me.my.canva.site/images/66c955a4017e32fafcc6ba54b7448f9c.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+    
     
 }
-
-.img-rodape{
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-footer ul {
-    list-style: none;
-}
-footer li{
-    display: inline;
-    margin: 0 40px;
-}
-
-footer li img {
-    height: 29.34px;
-    width: 19.25px;
-}
-
 .aracaju-pginicial{
     width: 400px;
     height: 200px;
@@ -101,4 +66,62 @@ footer li img {
     padding-top: 54%;
     padding: 10px;
     border-radius: 18px;
+    height: auto;
 }
+.noticia{
+    width: 200px;
+    height: 100px;
+    background-color: #BB0000;
+    color: #FFF;
+    opacity: 61%;
+    margin-top: 30px;
+    padding-top: 42.5422%;
+    transform: rotate(0deg);
+    z-index: 13;
+    grid-area: 6 / 3 / 9 / 5;
+    position: relative;
+    border-radius: 18px;
+    height: auto;
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: #bc0404;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-rodape img {
+    width: 100%;
+}
+
+.rodape {
+    text-align: justify;
+    max-width: 400px;
+}
+
+.links-rodape ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.links-rodape li {
+    margin-right: 20px;
+}
+
+.links-rodape img {
+    height: 29.34px;
+    width: 19.25px;
+}
+
+
