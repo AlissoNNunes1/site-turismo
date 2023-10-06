@@ -5,34 +5,34 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
- div{
-    display: block;
- }
+
 .navbar{ /* Personalização da navbar */
     background-color: #c00404;
     display: flex;
     align-items: center;
     padding: 1px;
-    padding-left: 40px ;
+    padding-left: 3%;
     box-shadow: 0px 0px 25px black;
+    position: relative;
+    z-index: 2;
 }
 
 .logo{ /*Logo do header*/
-    width: 55px;    
+    width: 4%;    
 }
 
 .navbar-left{ /*Links do header*/
     list-style: none;
     display: flex;
+    height: auto;
 }
 
 li{ /*Alinhamento dos links do header*/
-    justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-a{ /*Personalização dos links do header*/
+.header{ /*Personalização dos links do header*/
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 800;
@@ -43,45 +43,109 @@ a{ /*Personalização dos links do header*/
     margin: 15px;
 }
 
-a:hover{ /*Interação ao passar mouse nos links do header*/
+.header:hover{ /*Interação ao passar mouse nos links do header*/
     background-color: rgba(0, 0, 0, 0.514);
     
-}
-
+}   
 /* Estilização do conteúdo principal */
 main {
     padding: 20px;
-    background-image: url('https://web-front-end-me.my.canva.site/images/66c955a4017e32fafcc6ba54b7448f9c.jpg') ;
+    background-image: url('Imagem/indexbg.jpg') ;
     background-size: cover;
     background-repeat: no-repeat ;
     background-position: center;
-    
+    z-index: 1;
     
 }
+.parte-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
 .aracaju-pginicial{
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    max-height: 250px;
     background-color: #BB0000;
     color: #FFF;
     padding-top: 54%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 18px;
-    height: auto;
+}
+.titulo-1{
+    font-size: 50px;
+    margin: 0;
+    padding: 5px;
+    border: 2px dotted white;
+    border-radius: 10px;
+    text-align: center;
+}
+.descricao-1{
+    text-align: justify;
+}
+h2{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0px 2px 4px black;
+    font-size: 25px;
+    text-align: center;
+    max-height: 250px;
+    background-color: #BB0000;
+    padding: 15px;
+    border-radius: 18px;
+}
+.aba-noticias{
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.61);
+    color:#BB0000;
+    padding: 15px;
+    border-radius: 18px;
+    margin-top: 10%;
+    
 }
 .noticia{
-    width: 200px;
-    height: 100px;
-    background-color: #BB0000;
+    width: auto;
+    margin: 10px;
+    font-size: 13px;
+    text-align: justify;
+    background-color: #bb0000;
     color: #FFF;
-    opacity: 61%;
-    margin-top: 30px;
-    padding-top: 42.5422%;
-    transform: rotate(0deg);
-    z-index: 13;
-    grid-area: 6 / 3 / 9 / 5;
-    position: relative;
-    border-radius: 18px;
-    height: auto;
+    padding: 8px;
+    border-radius: 18px;  
+    display: flex;  
+    align-items: center;
+}
+.noticia{
+    margin: 30px;
+}
+.noticia img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.carrosel-1{
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+.carrosel-2{
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    filter: contrast(120%);
 }
 
 /* Estilização do rodapé */
@@ -107,6 +171,14 @@ footer {
     max-width: 400px;
 }
 
+.lk-footer{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    margin: 15px;
+}
+
 .links-rodape ul {
     list-style: none;
     display: flex;
@@ -116,12 +188,12 @@ footer {
 }
 
 .links-rodape li {
-    margin-right: 20px;
+    margin-right: px;
+    display: flex;
 }
 
 .links-rodape img {
     height: 29.34px;
     width: 19.25px;
 }
-
 
