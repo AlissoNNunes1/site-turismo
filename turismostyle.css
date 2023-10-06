@@ -1,5 +1,10 @@
 body{
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
+    
+}
+main{
     background-image: url('Imagem/indexbg.jpg') ;
 }
 
@@ -47,6 +52,7 @@ li{ /*Alinhamento dos links do header*/
 
 .container{/*Conteúdo principal da DIV*/
     display: flex;
+    
     flex-direction: row;
     justify-content: center;
     align-items: center;
